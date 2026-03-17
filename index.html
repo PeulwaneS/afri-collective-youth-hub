@@ -3,184 +3,156 @@
 
 <head>
 <title>Afri Collective Youth Hub</title>
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
 
 body{
 font-family: Arial;
-text-align:center;
+margin:0;
 background:#0f172a;
 color:white;
-padding:40px;
+text-align:center;
+}
+
+header{
+padding:60px 20px;
+background:#020617;
+}
+
+h1{
+font-size:40px;
+}
+
+.store{
+padding:40px 20px;
+}
+
+.products{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.card{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+width:200px;
 }
 
 button{
-background:#22c55e;
+padding:10px 15px;
 border:none;
-padding:15px 25px;
-font-size:18px;
-color:white;
-border-radius:8px;
+background:#38bdf8;
+color:black;
+border-radius:6px;
 cursor:pointer;
 }
 
-.section{
-margin-top:60px;
+form{
+margin-top:50px;
+background:#1e293b;
+padding:30px;
+border-radius:10px;
+max-width:400px;
+margin-left:auto;
+margin-right:auto;
+}
+
+select,input{
+width:100%;
+padding:10px;
+margin-top:5px;
+margin-bottom:15px;
 }
 
 </style>
-
 </head>
 
 <body>
 
-<div style="padding:80px 20px;background:#020617;border-radius:12px;margin-bottom:40px;">
+<header>
 
-<h1 style="font-size:40px;">Afri Collective Youth Hub</h1>
-
-<p style="font-size:18px;max-width:600px;margin:auto;">
-A digital ecosystem empowering African youth through skills,
-opportunities, learning resources and digital services.
-</p>
-
-<br>
-
-<a href="#services">
-<button>Explore Digital Services</button>
-</a>
-
-<a href="#marketplace">
-<button>Join the Marketplace</button>
-</a>
-
-</div>
-<div style="margin-bottom:40px;">
-
-<a href="#services"><button>Digital Services</button></a>
-
-<a href="#marketplace"><button>Marketplace</button></a>
-
-<a href="#learning"><button>Learning Hub</button></a>
-
-<a href="#opportunities"><button>Opportunities</button></a>
-
-</div>
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSd4HkEKfD329iKu8V5vP6wWXZ1a29psbmhwG9G08BlQkQCk1w/viewform?usp=header">
-<button>Join The Network</button>
-</a>
-
-<div class="section">
-
-<h2>What You Can Do Here</h2>
+<h1>Afri Collective Youth Hub</h1>
 
 <p>
-• Share your skills<br>
-• Find opportunities<br>
-• Connect with mentors<br>
-• Access learning resources<br>
-• Join a youth network across Africa
+Digital Services Store for Airtime, Vouchers and Youth Opportunities.
 </p>
 
-</div>
-<div class="section" id="services">
-<h2>Digital Services</h2>
+</header>
 
-<p>
-Buy essential digital services instantly.
-</p>
+<div class="store">
 
-<p>
-  <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:20px;">
+<h2>Digital Services Store</h2>
 
-<div style="background:#1e293b;padding:20px;border-radius:10px;width:200px;">
-<h3>Airtime</h3>
-<p>Instant mobile airtime top-ups.</p>
-<button>Buy Airtime</button>
+<div class="products">
+
+<div class="card">
+<h3>MTN Airtime</h3>
+<a href="#order-form"><button>Buy</button></a>
 </div>
 
-<div style="background:#1e293b;padding:20px;border-radius:10px;width:200px;">
-<h3>Mobile Data</h3>
-<p>Affordable mobile data bundles.</p>
-<button>Buy Data</button>
+<div class="card">
+<h3>Vodacom Airtime</h3>
+<a href="#order-form"><button>Buy</button></a>
 </div>
 
-<div style="background:#1e293b;padding:20px;border-radius:10px;width:200px;">
-<h3>Electricity</h3>
-<p>Prepaid electricity tokens.</p>
-<button>Buy Electricity</button>
+<div class="card">
+<h3>Cell C Airtime</h3>
+<a href="#order-form"><button>Buy</button></a>
 </div>
 
-<div style="background:#1e293b;padding:20px;border-radius:10px;width:200px;">
-<h3>Gaming Vouchers</h3>
-<p>Purchase gaming vouchers instantly.</p>
-<button>Buy Voucher</button>
+<div class="card">
+<h3>Telkom Airtime</h3>
+<a href="#order-form"><button>Buy</button></a>
+</div>
+
+<div class="card">
+<h3>Ringas Voucher</h3>
+<a href="#order-form"><button>Buy</button></a>
+</div>
+
+<div class="card">
+<h3>BLU Voucher</h3>
+<a href="#order-form"><button>Buy</button></a>
+</div>
+
+<div class="card">
+<h3>OTT Voucher</h3>
+<a href="#order-form"><button>Buy</button></a>
+</div>
+
+<div class="card">
+<h3>1Voucher</h3>
+<a href="#order-form"><button>Buy</button></a>
+</div>
+
+<div class="card">
+<h3>Easypay Voucher</h3>
+<a href="#order-form"><button>Buy</button></a>
+</div>
+
+<div class="card">
+<h3>Kazang Voucher</h3>
+<a href="#order-form"><button>Buy</button></a>
+</div>
+
+<div class="card">
+<h3>Easyload Voucher</h3>
+<a href="#order-form"><button>Buy</button></a>
 </div>
 
 </div>
-</p>
 
-<button>Buy Digital Services</button>
+<form id="order-form" action="https://formspree.io/f/xqeyyeww" method="POST">
 
-</div>
-<div class="section" id="marketplace">
-<h2>Youth Skills Marketplace</h2>
-
-<p>
-A space where young people can offer their skills and connect with opportunities worldwide.
-</p>
-
-<p>
-• Graphic Design<br>
-• Video Editing<br>
-• Writing & Translation<br>
-• Coding & Web Development<br>
-• Online Tutoring
-</p>
-
-<button>Offer Your Skills</button>
-
-</div>
-<div class="section" id="learning">
-<h2>Learning Hub</h2>
-
-<p>
-Access simplified learning resources designed to help students succeed in school and university.
-</p>
-
-<p>
-• Exam Preparation Packs<br>
-• AI Summarised Lessons<br>
-• Study Notes<br>
-• Research & Assignment Guidance
-</p>
-
-<button>Explore Learning Resources</button>
-
-</div>
-  <div class="section" id="opportunities">
-<h2>Opportunity Hub</h2>
-
-<p>
-Discover opportunities designed to help African youth grow and succeed.
-</p>
-
-<p>
-• Job Opportunities<br>
-• Remote Work<br>
-• Internships<br>
-• Mentorship Programs
-</p>
-
-<button>Explore Opportunities</button>
-
-</div>
-  <h2>Digital Services Store</h2>
-
-<form action="https://formspree.io/f/xqeyyeww" method="POST">
 <input type="hidden" name="_next" value="https://velvety-tartufo-45e3d9.netlify.app/thankyou.html">
-<label>Select Network</label><br>
+
+<h3>Place Your Order</h3>
+
+<label>Network / Voucher</label>
 <select name="network">
 
 <option>MTN Pinless Airtime</option>
@@ -194,18 +166,14 @@ Discover opportunities designed to help African youth grow and succeed.
 <option>1Voucher</option>
 <option>Easypay Voucher</option>
 <option>Kazang Voucher</option>
-
 <option>Easyload Voucher</option>
 
 </select>
 
-<br><br>
-
-<label>Select Amount</label><br>
+<label>Select Amount</label>
 <select name="amount">
 
 <option>Any Amount</option>
-
 <option>R2</option>
 <option>R5</option>
 <option>R10</option>
@@ -221,21 +189,21 @@ Discover opportunities designed to help African youth grow and succeed.
 
 </select>
 
-<br><br>
+<label>How Many Vouchers?</label>
+<input type="number" name="quantity" value="1" min="1">
 
-<label>Phone Number</label><br>
+<label>Phone Number</label>
 <input type="text" name="phone" required>
 
-<br><br>
-
-<label>Email Address</label><br>
+<label>Email Address</label>
 <input type="email" name="email" required>
-
-<br><br>
 
 <button type="submit">Submit Order</button>
 
 </form>
+
+</div>
+
 </body>
 
 </html>
